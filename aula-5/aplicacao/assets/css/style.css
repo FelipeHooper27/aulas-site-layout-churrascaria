@@ -1,0 +1,130 @@
+/*reset*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+    a,
+    a:hover {
+        text-decoration: none;
+    }
+
+    li {
+        list-style-type: none;
+    }
+
+    audio,
+    img,
+    iframe,
+    video {
+        display: inline-block;
+        height: auto;
+        width: 100%;
+    }
+}
+/* grid*/ 
+.container {
+    margin: 0 auto;
+    width: 100%;
+}
+.row {
+    display: flex;
+    flex-direction: row;
+}
+.col-12 {
+    width: 100%;
+}
+.col-6 {
+    width: 50%;
+}
+.col-4 {
+    width: 33.33%;
+}
+/*header*/
+.top {
+    background-color: black;
+    padding: 10px;
+
+    .top-container {
+        color: #fff;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+
+        .logo {
+            h1 {
+                font-size: 2em;
+            }
+        }
+
+        .container-links {
+            .links {
+                display: flex;
+                flex-direction: row;
+                gap: 15px;
+
+                li {
+                    a {
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*content*/
+.content {
+    margin: 0 auto;
+    min-height: 100svh;
+    @media (min-width: 768px){
+        width: 90%;
+    }
+}
+
+/*banner*/
+.banner {
+    background-image: url('https://wallpapers.com/images/hd/churrasco-on-chopping-board-g3ikpaz5sy5cl9g6.jpg');
+    background-position: center;
+    background-size: cover;
+
+    .container {
+        color: white;
+        margin: 0 auto;
+        padding: 17.8em 0;
+        text-align: center;
+        width: 100%;
+    }
+
+    .overlay {
+        background-color: #2b2a2a4a;
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+
+/* about-us*/
+.about-us {
+    .container {
+        margin: 0 auto;
+        padding: 4em 0;
+        width: 98%;
+        .row {
+            align-items: center;
+        }
+    }
+}
+
+/*tipos de carnes*/
+.carnes {
+    .container {
+        margin: 0 auto;
+        padding: 4em 0;
+        width: 98%;
+    }
+}
